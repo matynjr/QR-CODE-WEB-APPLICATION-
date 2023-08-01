@@ -9,7 +9,10 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 79vh;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  background:#fff;
+  border-radius:10px;
 `;
 
 const Heading = styled.h1`
@@ -94,6 +97,8 @@ class App extends React.Component {
           playsInline
         />
         <ScanButton onClick={this.startScanner}>Scan QR Code</ScanButton>
+        <br/>
+        <small>Powered by : Titans team</small>
       </Container>
     );
   }
