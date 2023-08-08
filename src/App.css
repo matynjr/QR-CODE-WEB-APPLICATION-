@@ -65,30 +65,3 @@ code {
 }
 
 
-.app {
-  padding: 20px;
-}
-
-.payment-history {
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.payment-item {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.payment-date {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.payment-amount {
-  font-size: 14px;
-}
-
-.payment-description {
-  font-size: 14px;
-}
