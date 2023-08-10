@@ -1,6 +1,7 @@
 import React from 'react';
 import viteLogo from '/sasulalogo.png'
 import './App.css'
+import Header  from './assets/components/header';
 import { BrowserMultiFormatReader } from '@zxing/library';
 import styled from 'styled-components';
 
@@ -79,6 +80,7 @@ class App extends React.Component {
       
       <Container>
         <div>
+          <Header />
         <a href="#" target="_blank">
           <img src={viteLogo} className="logo" alt="sasula ku spot logo" />
         </a>
