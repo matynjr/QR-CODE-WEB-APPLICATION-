@@ -1,7 +1,7 @@
 import React from 'react';
 import viteLogo from '/sasulalogo.png'
 import './App.css'
-import Header  from './assets/components/header';
+import Header  from './assets/components/header.jsx';
 import { BrowserMultiFormatReader } from '@zxing/library';
 import styled from 'styled-components';
 
