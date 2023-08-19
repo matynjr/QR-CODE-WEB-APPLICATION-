@@ -1,4 +1,5 @@
 import React from 'react';
+import Menu from './Menu';
 import viteLogo from '/sasulalogo.png'
 import './App.css'
 
@@ -10,7 +11,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 79vh;
+  height: auto;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   background:#fff;
   border-radius:10px;
@@ -18,19 +19,19 @@ const Container = styled.div`
 
 const Heading = styled.h1`
 font-size: 1.5rem;
-margin-bottom: 1rem;
+margin-bottom: 0rem;
 font-weight: 300;
 `;
 
 const ScanButton = styled.button`
 padding: 0.75rem 1rem;
-font-size: 1rem;
-background-color: #007bff;
-color: #fff;
-border: none;
-border-radius: 4px;
-cursor: pointer;
-margin-top: 3rem;
+  font-size: 12px;
+  background-color: #0e0e57;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
 `;
 
 
@@ -83,8 +84,9 @@ class App extends React.Component {
         <a href="#" target="_blank">
           <img src={viteLogo} className="logo" alt="sasula ku spot logo" />
         </a>
-       
       </div>
+      <Menu />
+      
         <Heading>SCAN QR CODE TO MAKE PAYMENT</Heading>
         <video
           ref={this.videoRef}
@@ -94,7 +96,7 @@ class App extends React.Component {
         />
         <ScanButton onClick={this.startScanner}>Scan QR Code</ScanButton>
         <br/>
-        <small>Powered by : Titans team</small>
+        <small className='footer-text'>Powered by : Titans team</small>
       </Container>
     );
   }
