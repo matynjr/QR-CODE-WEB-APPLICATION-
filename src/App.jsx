@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Menu from "./Menu";
 import Signup from "./Signup";
 import Loggin from "./Loggin";
+import Faqs from "./Faqs";
 import viteLogo from "/sasulalogo.png";
 import "./App.css";
 import { BrowserMultiFormatReader } from "@zxing/library";
@@ -93,8 +94,10 @@ class App extends React.Component {
         <Router>
           <div className="main_menu">
             <Routes>
+            <Route path="/Signup" element={<Signup />} />
               <Route path="/Signup" element={<Signup />} />
               <Route path="/Loggin" element={<Loggin />} />
+              <Route path="/Faqs" element={<Faqs />} />
             </Routes>
             <Menu />
           </div>
