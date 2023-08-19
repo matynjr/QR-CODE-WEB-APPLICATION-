@@ -14,7 +14,11 @@ body {
   background-size:16px 16px;
 }
 
-
+.main_menu{
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
