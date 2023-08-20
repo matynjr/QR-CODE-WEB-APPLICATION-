@@ -13,6 +13,17 @@ body {
   background-color:#282828;
   background-size:16px 16px;
 }
+.SignUpForm h2{
+  color:#0e0e57;
+}
+.SignUpForm label{
+  color: #000;
+}
+.SignUpForm input{
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #656bda;
+}
 .App{
   background: #fff;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,

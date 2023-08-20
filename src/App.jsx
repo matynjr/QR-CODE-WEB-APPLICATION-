@@ -28,8 +28,6 @@ function App() {
           <Menu />
         </div>
       </Router>
-
-     
     </div>
   );
 }
