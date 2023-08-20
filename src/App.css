@@ -13,7 +13,24 @@ body {
   background-color:#282828;
   background-size:16px 16px;
 }
-
+.App{
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    sans-serif;
+    
+  justify-content: center;
+  height: auto;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  background: #fff;
+     border-radius: 10px;
+   
+}
+.App h4{
+  font-size: 12px;
+  margin-bottom: 1rem;
+  font-weight: 300;
+color: #000;
+}
 .main_menu{
   width: 70%;
   margin: 0 auto;
