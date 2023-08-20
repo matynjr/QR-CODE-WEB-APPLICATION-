@@ -8,9 +8,8 @@ import React, { useEffect } from "react";
 import "./App.css";
 // import { BrowserMultiFormatReader } from "@zxing/library";
 // import styled from "styled-components";
-import { Html5QrcodeScanner } from 'html5-qrcode';
-import {useState} from "react";
-
+import { Html5QrcodeScanner } from "html5-qrcode";
+import { useState } from "react";
 
 // const Container = styled.div`
 //   display: flex;
@@ -121,52 +120,48 @@ import {useState} from "react";
 // }
 
 //start QR CODE SCANNER
-function App(){
+function Scanner() {
   const [scanResult, setScanResult] = useState(null);
 
   //use effect hook to handle the scan process
-  useEffect(()=>{
+  useEffect(() => {
+    const scanner = new Html5QrcodeScanner("reader", {
+      //dimensions for scanner
+      qrbox: {
+        width: 250,
+        height: 250,
+      },
+      //frames per second for performace
+      fps: 5,
+    });
+    //start the scanner
+    scanner.render(success, error);
+    //handling success
+    function success(result) {
+      scanner.clear(); //if success full clear the scanner
+      setScanResult(result); //set the obtained scann result
+    }
+    //handling the error
+    function error(err) {
+      console.warn(err);
+    }
+  }, []);
 
- const scanner = new Html5QrcodeScanner('reader',{
-  //dimensions for scanner
-    qrbox: {
-      width:250,
-      height:250,
-    },
-    //frames per second for performace
-    fps :5,
-
-  })
-  //start the scanner
-  scanner.render(success, error);
-//handling success
-  function success(result){
-    scanner.clear(); //if success full clear the scanner
-    setScanResult(result); //set the obtained scann result
-
-  }
-  //handling the error
-  function error(err){
-    console.warn(err);
-
-  }
-
-  },[])
-
-  return(
+  return (
     //render the design
-    <div className="App">
-      
+    <div >
       <h1>QR CODE SCANNER</h1>
-      
-      { scanResult
-      ? <div>success : <a href={scanResult}>{scanResult}</a></div>
-      : <div id="reader"></div>
-      }
-  
+
+      {scanResult ? (
+        <div>
+          success : <a href={scanResult}>{scanResult}</a>
+        </div>
+      ) : (
+        <div id="reader"></div>
+      )}
     </div>
-  )
+  );
 }
 //END QR CODE SCANNER
 
-export default App;
+export default Scanner;
