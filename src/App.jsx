@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Menu from "./Menu";
 import Signup from "./Signup";
 import Loggin from "./Loggin";
 import Scanner from "./components/Qrcode";
@@ -24,7 +23,7 @@ function App() {
             <Route path="/Loggin" element={<Loggin />} />
             <Route path="/qrcodereader" element={<Scanner />} />
           </Routes>
-          <Menu />
+       
         </div>
       </Router>
     </div>
