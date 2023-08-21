@@ -45,9 +45,9 @@ export default function Signup() {
 
   return (
     <div className='SignUpForm'>
-      <h2>Sign Up Form</h2>
+      <h2>Create Account</h2>
       <form onSubmit={handleSubmit}>
-      <div>
+      <div className='holder'>
           <label>Firstname:</label>
           <input
             type="text"
@@ -56,7 +56,7 @@ export default function Signup() {
             required
           />
         </div>
-        <div>
+        <div className='holder'>
           <label>Lastname:</label>
           <input
             type="text"
@@ -65,7 +65,7 @@ export default function Signup() {
             required
           />
         </div>
-        <div>
+        <div className='holder'>
           <label>Username:</label>
           <input
             type="text"
@@ -74,7 +74,7 @@ export default function Signup() {
             required
           />
         </div>
-        <div>
+        <div className='holder'>
           <label>Password:</label>
           <input
             type="password"
@@ -83,16 +83,16 @@ export default function Signup() {
             required
           />
         </div>
-        <div>
+        <div className='holder'>
           <label>Confirm Password:</label>
-          <input
+          <input placeholder=''
             type="password"
             value={confirmPassword}
             onChange={handleConfirmPasswordChange}
             required
           />
         </div>
-        <div>
+        <div className='holder'>
           <label>Email:</label>
           <input
             type="email"
@@ -101,7 +101,7 @@ export default function Signup() {
             required
           />
         </div>
-        <button type="submit">Sign Up</button>
+        <button className='btn' type="submit">Sign Up</button>
       </form>
     </div>
   );

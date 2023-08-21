@@ -5,56 +5,79 @@
   text-align: center;
 }
 body {
-  background:
-  radial-gradient(black 15%, transparent 16%) 0 0,
-  radial-gradient(black 15%, transparent 16%) 8px 8px,
-  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-  background-color:#282828;
-  background-size:16px 16px;
+  background: radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
+  background-color: #282828;
+  background-size: 16px 16px;
 }
-.SignUpForm h2{
-  color:#0e0e57;
+.SignUpForm h2 {
+  color: #0e0e57;
+  text-transform: uppercase;
+  font-weight: 300;
 }
-.SignUpForm label{
+.SignUpForm label {
   color: #000;
 }
-.SignUpForm input{
+.SignUpForm input {
   background: #fff;
-  border-radius: 5px;
-  border: 1px solid #656bda;
+  border-bottom: 1px solid #2196f3;
+border-top: none;
+border-right: none;
+border-left: none;
+color: #0e0e57;
 }
-.LoginForm h2{
-  color:#0e0e57;
+.LoginForm h2 {
+  color: #0e0e57;
+  text-transform: uppercase;
+  font-weight: 300;
 }
-.LoginForm label{
+.btn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.7rem 4rem;
+  font-size: 1.2em;
+  font-weight: 300;
+  font-family: inherit;
+  background-color: #2196f3;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-top: 3rem;
+}
+.holder{
+  padding: 1rem 0;
+}
+.LoginForm label {
   color: #000;
 }
-.LoginForm input{
+.LoginForm input {
   background: #fff;
-  border-radius: 5px;
-  border: 1px solid #656bda;
+    border-bottom: 1px solid #2196f3;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: #0e0e57;
 }
-.App{
+.App {
   background: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-    sans-serif;
-    
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+
   justify-content: center;
   height: auto;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   background: #fff;
-     border-radius: 10px;
-     height: 100vh;
-   
+  border-radius: 10px;
+  height: 100vh;
 }
-.App h4{
+.App h4 {
   font-size: 12px;
   margin-bottom: 1rem;
   font-weight: 300;
-color: #000;
+  color: #000;
 }
-.main_menu{
+.main_menu {
   width: 70%;
   margin: 0 auto;
   text-align: center;
@@ -94,7 +117,7 @@ color: #000;
 .read-the-docs {
   color: #888;
 }
-.page-title{
+.page-title {
   color: #000;
 }
 
@@ -125,97 +148,70 @@ color: #000;
 .menu-list a:hover {
   text-decoration: underline;
 }
-.footer-text{
-  color:#0e0e57;
+.footer-text {
+  color: #0e0e57;
 }
-
 
 /* src/App.css */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
-
-
 @media only screen and (min-width: 320px) and (max-width: 479px) {
-  .logo{
-  height: auto;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter .3s;
-  width: 80%;}
-  
-
+  .logo {
+    height: auto;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 0.3s;
+    width: 80%;
   }
+}
 /* 
 For mobile (landscape) */
 
-  @media only screen and (min-width: 480px) and (max-width: 767px) {
-
-
-
-  }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
 
 /* For tablet */
 
-  @media only screen and (min-width: 768px) and (max-width: 979px) {
-
- 
-
-  }
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+}
 
 /* For small desktop */
 
-  @media only screen and (min-width: 980px) and (max-width: 1023px) {
-
-
-
-  }
+@media only screen and (min-width: 980px) and (max-width: 1023px) {
+}
 
 /* For typical desktop */
 
-  @media only screen and (min-width: 1024px) and (max-width: 1199px) {
-
-
-
-  }
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+}
 
 /* For large desktop */
 
-  @media only screen and (min-width: 1200px) {
-
- 
-
-  }
+@media only screen and (min-width: 1200px) {
+}
 
 /* For printers */
 
-  @media print {
-
-
-
-  }
+@media print {
+}
 
 /* For screen readers */
 
-  @media speech {
-
-
-
-  }
+@media speech {
+}
 
 /* //Add Orientation as expression */
 
-  @media only screen and (min-width: 1200px) and (orientation : portrait) {
-
- 
-
-  }
+@media only screen and (min-width: 1200px) and (orientation: portrait) {
+}

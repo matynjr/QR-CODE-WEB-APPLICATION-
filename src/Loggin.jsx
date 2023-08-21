@@ -22,9 +22,9 @@ export default function Loggin() {
 
   return (
     <div className ="LoginForm">
-      <h2>Login Form</h2>
+      <h2>Login into your account</h2>
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className='holder'>
           <label>Username:</label>
           <input
             type="text"
@@ -34,7 +34,7 @@ export default function Loggin() {
             required
           />
         </div>
-        <div>
+        <div className='holder'>
           <label>Password:</label>
           <input
             type="password"
@@ -44,7 +44,7 @@ export default function Loggin() {
             required
           />
         </div>
-        <button type="submit">Login</button>
+        <button className="btn" type="submit">Login</button>
       </form>
     </div>
   );
