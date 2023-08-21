@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "../App.css";
 import Menu from "../Menu";
 import { Html5QrcodeScanner } from "html5-qrcode";
+import Menu from "../Menu";
 
 //start QR CODE SCANNER
 function Scanner() {
@@ -33,7 +34,7 @@ function Scanner() {
 
   return (
     <>
-       <Menu />
+
       <h4>Scan Parking code to make payment</h4>
 
       {scanResult ? (

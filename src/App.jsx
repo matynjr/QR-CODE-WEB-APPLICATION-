@@ -23,7 +23,6 @@ function App() {
             <Route path="/Loggin" element={<Loggin />} />
             <Route path="/qrcodereader" element={<Scanner />} />
           </Routes>
-       
         </div>
       </Router>
     </div>
