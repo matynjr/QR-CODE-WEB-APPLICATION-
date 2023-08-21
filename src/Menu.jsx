@@ -2,7 +2,7 @@ const Menu = () => {
   const menuItems = [
     { id: 1, label: "SIGN-UP", link: "./Signup" },
     { id: 2, label: "LOGIN", link: "./Loggin" },
-    { id: 3, label: "FAQS", link: "./Faqs" },
+    { id: 3, label: "SCAN", link: "./qrcodereader"},
   ];
 
   return (
