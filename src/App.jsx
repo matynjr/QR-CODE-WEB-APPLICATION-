@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
 import Signup from "./Signup";
 import Loggin from "./Loggin";
 import Scanner from "./components/Qrcode";
