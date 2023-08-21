@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "../App.css";
-import Menu from "./Menu";
+import Menu from "../Menu";
 import { Html5QrcodeScanner } from "html5-qrcode";
 
 //start QR CODE SCANNER
