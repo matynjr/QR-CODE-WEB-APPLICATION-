@@ -16,7 +16,7 @@ export default function Loggin() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    navigateTo('/');
+    navigateTo('/qrcodereader');
     // console.log('Submitted:', username, password);
   };
 
