@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Menu from "./Menu";
 import Signup from "./Signup";
 import Loggin from "./Loggin";
-import Faqs from "./Faqs";
 import Scanner from "./components/Qrcode";
 import viteLogo from "/sasulalogo.png";
 import "./App.css";
@@ -20,9 +19,9 @@ function App() {
       <Router>
         <div className="main_menu">
           <Routes>
+          <Route path="/" element={<Loggin />} />
             <Route path="/Signup" element={<Signup />} />
             <Route path="/Loggin" element={<Loggin />} />
-            <Route path="/Faqs" element={<Faqs />} />
             <Route path="/qrcodereader" element={<Scanner />} />
           </Routes>
           <Menu />
