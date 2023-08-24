@@ -19,7 +19,7 @@ function App() {
       <Router>
         <div className="main_menu">
           <Routes>
-          <Route path="/" element={<Loggin />} />
+          <Route path="/" element={<Signup />} />
             <Route path="/Signup" element={<Signup />} />
             <Route path="/Loggin" element={<Loggin />} />
             <Route path="/qrcodereader" element={<Scanner />} />
