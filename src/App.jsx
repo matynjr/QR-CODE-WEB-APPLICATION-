@@ -30,5 +30,6 @@ function App() {
   );
 }
 //END QR CODE SCANNER
+//end scanner
 
 export default App;
