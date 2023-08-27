@@ -31,5 +31,5 @@ function App() {
 }
 //END QR CODE SCANNER
 //end scanner
-
+//new content
 export default App;
